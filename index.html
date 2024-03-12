@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Assignment 8
+            
+        // Answer 2
+        var firstInteger = parseInt(prompt("Enter the first integer:"));
+        var secondInteger = parseInt(prompt("Enter the second integer:"));
+        if (firstInteger === secondInteger) {
+            alert("The two integers are equal.");
+        }
+        else {
+            if (firstInteger > secondInteger) {
+                alert("The larger integer is: " + firstInteger);
+            } else {
+                alert("The larger integer is: " + secondInteger);
+            }
+        }
+        
+        // Answer 3
+        var num = +prompt("Enter a number: ");
+        if (num > 0) {
+            console.log("The number is positive.");
+        } else if (num < 0) {
+            console.log("The number is negative.");
+        } else {
+            console.log("The number is zero.");
+        }
+        
+        // Answer 4
+        var char = prompt("Enter a character: ");
+        if (char.length === 1) {
+            var vowels = "aeiouAEIOU";
+            if (vowels.includes(char)) {
+                console.log("True");
+            } else {
+                console.log("False");
+            }
+        } else {
+            console.log("Please enter a single character.");
+        }
+
+        // Answer 5
+        var correctPassword = "password123";
+        var userPassword = prompt("Enter your password: ");
+        if (userPassword === null || userPassword === "") {
+            alert('Please enter your password.');
+        } else if (userPassword === correctPassword) {
+            alert("Correct! The password you entered matches the original password.");
+        } else {
+            alert("Incorrect password.");
+        }
+        
+        // Answer 6
+        var greeting;
+        var hour = 13;
+        if (hour < 18) {
+            console.log("Good day");
+        } else {
+            console.log("Good evening");
+        }
+        
+        // Answer 7
+        var time = parseInt(prompt("Enter the time in 24-hour clock format (e.g., 1900 for 7pm): "));
+        if (time >= 0 && time < 1200) {
+            alert("Good morning!");
+        } else if (time >= 1200 && time < 1700) {
+            alert("Good afternoon!");
+        } else if (time >= 1700 && time < 2000) {
+            alert("Good evening!");
+        } else if (time >= 2000 && time <= 2359) {
+            alert("Good night!");
+        } else {
+            alert("Invalid time format.");
+        }
+        </script>
+</body>
+</html>
